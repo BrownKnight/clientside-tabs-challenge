@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.tab-panel-container {
+.tab-panel {
   width: 100%;
   background-color: white;
 }
@@ -53,4 +53,8 @@ body {
 a {
   color: black;
   text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
