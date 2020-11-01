@@ -41,4 +41,6 @@ tabPanelContainer === null || tabPanelContainer === void 0 ? void 0 : tabPanelCo
 setTabClickEventListener("1");
 setTabClickEventListener("2");
 setTabClickEventListener("3");
+UKNewsTabPanel.loadContent("uk-news");
 FootballTabPanel.loadContent("football");
+TravelTabPanel.loadContent("travel");

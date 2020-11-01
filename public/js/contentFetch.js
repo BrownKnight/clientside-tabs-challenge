@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 export class ContentFetch {
     static getMostRecentArticlesForSection(section) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield fetch("https://content.guardianapis.com/football?order-by=newest&api-key=test").then((res) => res.json());
+            return yield fetch(`https://content.guardianapis.com/${section}?order-by=newest&api-key=test`).then((res) => res.json());
         });
     }
 }
