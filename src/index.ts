@@ -1,8 +1,8 @@
-
-
 function setTabClickEventListener(tabNumber: string) {
-  const tabSelectButton: HTMLElement | null = document.getElementById(`tab-select-${tabNumber}`);
-  if (tabSelectButton === null)  {
+  const tabSelectButton: HTMLElement | null = document.getElementById(
+    `tab-select-${tabNumber}`
+  );
+  if (tabSelectButton === null) {
     // TODO throw exception / log error?
     return;
   }
@@ -16,9 +16,8 @@ function showTab(tabNumber: string) {
   for (let tabPanel of tabPanels) {
     if (tabPanel.id === `tab-panel-${tabNumber}`) {
       tabPanel.classList.remove("hidden");
-    }
-    else {
-      tabPanel.classList.add("hidden")
+    } else {
+      tabPanel.classList.add("hidden");
     }
   }
 
@@ -27,9 +26,8 @@ function showTab(tabNumber: string) {
   for (let tabButton of tabButtons) {
     if (tabButton.id === `tab-select-${tabNumber}`) {
       tabButton.classList.add("active");
-    }
-    else {
-      tabButton.classList.remove("active")
+    } else {
+      tabButton.classList.remove("active");
     }
   }
 }
