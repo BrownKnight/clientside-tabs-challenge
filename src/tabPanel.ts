@@ -1,12 +1,13 @@
-export class TabPanel extends HTMLOListElement {
+export class TabPanel {
+  element: HTMLOListElement;
   constructor(tabNumber: number, shownAtStart: boolean) {
-    super();
     console.log("Creating!")
-    this.id = `tab-panel-${tabNumber}}`
-    this.classList.add("tab-panel");
+    this.element = document.createElement("ol");
+    this.element.id = `tab-panel-${tabNumber}`
+    this.element.classList.add("tab-panel");
 
     if (!shownAtStart) {
-      this.classList.add("hidden");
+      this.element.classList.add("hidden");
     }
   }
 }
