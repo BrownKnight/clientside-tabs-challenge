@@ -37,15 +37,17 @@ function showTab(tabNumber: string) {
 // Generate tab panels for the three tabs
 const tabPanelContainer = document.getElementById("tab-panels");
 
-const UKNewsTabPanel = new TabPanel(1, true).element;
-const FootballTabPanel = new TabPanel(2, false).element;
-const TravelTabPanel = new TabPanel(3, false).element;
+const UKNewsTabPanel = new TabPanel(1, true);
+const FootballTabPanel = new TabPanel(2, false);
+const TravelTabPanel = new TabPanel(3, false);
 
-tabPanelContainer?.appendChild(UKNewsTabPanel);
-tabPanelContainer?.appendChild(FootballTabPanel);
-tabPanelContainer?.appendChild(TravelTabPanel);
+tabPanelContainer?.appendChild(UKNewsTabPanel.element);
+tabPanelContainer?.appendChild(FootballTabPanel.element);
+tabPanelContainer?.appendChild(TravelTabPanel.element);
 
 // Setup required function calls when the document is loaded
 setTabClickEventListener("1");
 setTabClickEventListener("2");
 setTabClickEventListener("3");
+
+FootballTabPanel.loadContent("football");

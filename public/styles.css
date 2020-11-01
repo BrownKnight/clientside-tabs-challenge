@@ -52,9 +52,10 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
-a {
+.list-item a {
   color: black;
   text-decoration: none;
+  margin-left: 1em;
 }
 
 .hidden {

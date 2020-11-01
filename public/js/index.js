@@ -31,13 +31,14 @@ function showTab(tabNumber) {
 }
 // Generate tab panels for the three tabs
 const tabPanelContainer = document.getElementById("tab-panels");
-const UKNewsTabPanel = new TabPanel(1, true).element;
-const FootballTabPanel = new TabPanel(2, false).element;
-const TravelTabPanel = new TabPanel(3, false).element;
-tabPanelContainer === null || tabPanelContainer === void 0 ? void 0 : tabPanelContainer.appendChild(UKNewsTabPanel);
-tabPanelContainer === null || tabPanelContainer === void 0 ? void 0 : tabPanelContainer.appendChild(FootballTabPanel);
-tabPanelContainer === null || tabPanelContainer === void 0 ? void 0 : tabPanelContainer.appendChild(TravelTabPanel);
+const UKNewsTabPanel = new TabPanel(1, true);
+const FootballTabPanel = new TabPanel(2, false);
+const TravelTabPanel = new TabPanel(3, false);
+tabPanelContainer === null || tabPanelContainer === void 0 ? void 0 : tabPanelContainer.appendChild(UKNewsTabPanel.element);
+tabPanelContainer === null || tabPanelContainer === void 0 ? void 0 : tabPanelContainer.appendChild(FootballTabPanel.element);
+tabPanelContainer === null || tabPanelContainer === void 0 ? void 0 : tabPanelContainer.appendChild(TravelTabPanel.element);
 // Setup required function calls when the document is loaded
 setTabClickEventListener("1");
 setTabClickEventListener("2");
 setTabClickEventListener("3");
+FootballTabPanel.loadContent("football");
