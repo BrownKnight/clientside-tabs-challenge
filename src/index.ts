@@ -1,3 +1,5 @@
+import { TabPanel } from "./tabPanel";
+
 function setTabClickEventListener(tabNumber: string) {
   const tabSelectButton: HTMLElement | null = document.getElementById(
     `tab-select-${tabNumber}`
@@ -31,6 +33,17 @@ function showTab(tabNumber: string) {
     }
   }
 }
+
+// Generate tab panels for the three tabs
+const tabPanelContainer = document.getElementById("tab-panels");
+
+const UKNewsTabPanel = new TabPanel(1, true);
+const FootballTabPanel = new TabPanel(2, false);
+const TravelTabPanel = new TabPanel(2, false);
+
+tabPanelContainer?.appendChild(UKNewsTabPanel);
+tabPanelContainer?.appendChild(FootballTabPanel);
+tabPanelContainer?.appendChild(TravelTabPanel);
 
 // Setup required function calls when the document is loaded
 setTabClickEventListener("1");
