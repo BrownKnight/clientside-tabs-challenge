@@ -8,6 +8,9 @@ export class TabPanel {
     this.element.id = `tab-panel-${tabNumber}`;
     this.element.classList.add("tab-panel");
 
+    // Makes it easier for screen readers to know what this is
+    this.element.setAttribute("role", "tabpanel")
+
     if (!shownAtStart) {
       this.element.classList.add("hidden");
     }
