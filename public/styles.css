@@ -2,9 +2,23 @@ body {
     color: #000;
 }
 
-.tab-panel-container {
-    padding: 10px 0;
+.container {
     max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ededed;
+    padding: 0.25em;
+}
+
+.tab-container {
+    display: flex;
+    width: 100%;
+}
+
+.tab-panel-container {
+    width: 100%;
+    background-color: white;
 }
 
 .tab {
@@ -13,11 +27,18 @@ body {
     background-color: #ededed;
     font-weight: bold;
     text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tab.active {
+    background-color: white;
 }
 
 .list-item {
     padding: 10px 0;
     border-top: 1px solid #ededed;
+    list-style: none;
 }
 
 .list-item span {
