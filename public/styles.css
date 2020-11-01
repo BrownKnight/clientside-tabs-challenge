@@ -19,6 +19,7 @@ body {
 .tab-panel {
   width: 100%;
   background-color: white;
+  margin: 0;
 }
 
 .tab {
