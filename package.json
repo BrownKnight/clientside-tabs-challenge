@@ -4,8 +4,18 @@
   "description": "Guardian Clientside Tabs Challenge",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/guardian/clientside-tabs-challenge",
+    "url": "git+https://github.com/guardian/clientside-tabs-challenge.git",
     "type": "git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guardian/clientside-tabs-challenge/issues"
+  },
+  "homepage": "https://github.com/guardian/clientside-tabs-challenge#readme",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aman"
 }
