@@ -1,3 +1,8 @@
+# Notes
+Due to my choice to use modern JS modules, this website must be served to use its full functionality, due to default CORS policy restrictions. Everything is done on the client-side however. A npm dependency on `serve` is included, and as such serving the page locally is as simple as running `npx serve`, then navigating to `localhost:5000`
+
+Typescript is used to compose this solution, and is compiled into js. I have committed the compiled js so you don't need to mess about with compiling it yourself.
+
 # Clientside Tabs Challenge
 
 Thanks for your interest in applying for the Client Side Developer role at the Guardian. 
